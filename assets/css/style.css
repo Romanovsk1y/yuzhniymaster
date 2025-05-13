@@ -221,3 +221,72 @@ form button:hover {
 .registration-container button:hover {
   background-color: #218838;
 }
+/* ======= Адаптация под экраны до 768px ======= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: auto;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .btn-register {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero, .services, .form-container, .login-container {
+    padding: 15px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  input[type="text"], input[type="password"], input[type="file"], textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+/* ======= Гамбургер-кнопка ======= */
+.hamburger {
+  display: none; /* скрыта на десктопе */
+}
